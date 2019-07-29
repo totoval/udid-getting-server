@@ -1,5 +1,3 @@
 build:
   docker:
     web: herokuDockerfile
-run:
-  web: /bin/sh -c "TOTOVAL_APP_PORT=$PORT /bin/server"
