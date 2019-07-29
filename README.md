@@ -16,7 +16,6 @@ Use your iPhone open this link below:
 * https server
 
 ## How to use
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)  
 1. Move `.example.env.json` to `.env.json`
 
 ```shell
@@ -39,6 +38,18 @@ go build main.go
 
 4. Use your Iphone open this url [https://{YOUR-SERVER-DOMAIN}/v1/udid/mobileconfig](https://{YOUR-SERVER-DOMAIN}/v1/udid/mobileconfig) using Safari
 5. Follow the instructions
+
+## Deploy to Heroku
+1. push
+    ```bash
+    heroku container:push web -a YOUR-APP-NAME
+    ```
+2. release
+    ```bash
+    heroku container:release web -a YOUR-APP-NAME
+    ```
+3. get your udid
+use your iPhone open: https://{YOUR-APP-NAME}.herokuapp.com/v1/udid/mobileconfig
 
 ## Thanks
 * howett.net/plist
