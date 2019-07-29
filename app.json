@@ -1,0 +1,6 @@
+{
+  "name": "udid-getting-server",
+  "description": "A server that could be used for getting iPhone's UDID written in @totoval",
+  "repository": "https://github.com/totoval/udid-getting-server",
+  "keywords": ["udid", "totoval", "iPhone", "iOS", "debug"]
+}

@@ -16,6 +16,7 @@ Use your iPhone open this link below:
 * https server
 
 ## How to use
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)  
 1. Move `.example.env.json` to `.env.json`
 
 ```shell
