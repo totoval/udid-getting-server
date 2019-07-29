@@ -3,15 +3,14 @@
 ############################
 FROM golang:1.12-stretch AS builder
 COPY . /app/src/
-ENV GOPROXY=https://mirrors.aliyun.com/goproxy/
+#ENV GOPROXY=https://mirrors.aliyun.com/goproxy/
 ENV CGO_ENABLED=0
 ENV GOOS=linux
 ENV GOARCH=amd64
 #COPY $GOPATH /go
 WORKDIR /app/src/
 
-RUN go build -o /app/src/builds/server /app/src/main.go
-#RUN go build -o /app/src/builds/artisan /app/src/artisan.go
+RUN rm /app/src/artisan.go && go build -o /app/src/builds/server /app/src/main.go
 
 ############################
 # STEP 2 build a small server image
